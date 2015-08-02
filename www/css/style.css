@@ -1,6 +1,10 @@
 /* Empty. Add your own CSS if you like */
 
 
+.float-right {
+ float: right;
+}
+
 .form-postal-code {
   width: 300px;
   margin: 200px auto;

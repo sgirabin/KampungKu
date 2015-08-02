@@ -27,7 +27,16 @@
   </head>
   <body ng-app="starter">
 
+	<script id="home" type="text/ng-template">
+	  <ion-view view-title="Home">
+		<ion-content ng-controller="HomeCtrl">
+		  <a href="#/music">Go to music page!</a>
+		</ion-content>
+	  </ion-view>
+	</script>
+	
 	<div class="bar bar-header bar-stable">
+		<button class="button icon ion-navicon"></button>
 		<h1 class="title">KampungKu</h1>
 	</div>
 
@@ -39,11 +48,15 @@
 				<i class="icon ion-search placeholder-icon"></i>
 				<input type="text" placeholder="Postal Code">
 			</label>
-			<button class="button button-small">
+			<button class="button button-small" ng-click="start()">
 				Go
 			</button>
 	  	   </div>
 		</div>
+	</div>
+
+	<div class="bar bar-footer bar-stable">
+		<button class="button float-right" >Login</button>
 	</div>
 
 
